@@ -4,7 +4,7 @@ Repository for the TripAdvisor interview assignment
 # Setup
 
 - Clone this repository, enter the directory
-- Run `# pip install -r requirements.txt'`
+- Run `pip install -r requirements.txt` (I'd recommend a virtualenv)
 - Ensure that `activity.txt`, `hotels.txt`, and `users.txt` are in the directory.
 
 # Code

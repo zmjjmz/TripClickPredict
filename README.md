@@ -48,6 +48,8 @@ This method is slow, but could be reasonably scalable with appropriate lower-bou
 
 Evaluating this approach is not straightforward without knowing the order of the clicks given. I decided to randomly hold out a hotel from each user on the assumption that the other clicks could predict it, and found that the results were pretty awful, though significantly better than random -- getting around 12% accuracy.
 
+The final predictions are in `predictions.tsv`.
+
 ## Conclusion and Future Work
 
 There are a lot of ways that this could be improved. One consideration is that collaborative filtering usually requires some more normalization to work, but I decided against normalizing hotel click frequency because it didn't seem like the correct intuition -- i.e. it's not unreasonable to predict that a user would click on a popular hotel. This did however lead to the collaborative filter predicting popular hotels very frequently (see notebook).
